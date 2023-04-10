@@ -1,0 +1,14 @@
+.people-container{
+    display: flex;
+    justify-content: space-between;
+}
+.people-item-img-con{
+    background-image: url('../../../public/img/importent/Vector-1.png');
+    background-repeat: none;
+    /* width: 416px;
+    height: 544px; */
+}
+.people-item-img-con img{
+    width: 416px;
+    height: 404px;
+}

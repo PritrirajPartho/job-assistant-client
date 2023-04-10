@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "name": "Account & Finance",
+      "img": "./img/Icons/accounts 1.png",
+      "jobs_available": 100
+    },
+    {
+      "id": 2,
+      "name": "Data Scientist",
+      "img": "./img/Icons/business 1.png",
+      "jobs_available": 150
+    },
+    {
+      "id": 3,
+      "name": "App Developer",
+      "img": "./img/Icons/Frame-1.png",
+      "jobs_available": 200
+    },
+    {
+      "id": 4,
+      "name": "Engineering Job",
+      "img": "./img/Icons/chip 1.png",
+      "jobs_available": 120
+    }
+  ]
+  

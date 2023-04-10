@@ -1,9 +1,12 @@
 import React from 'react';
+import PeopleShow from '../PeopleShow/PeopleShow';
+import JobCategory from '../JobCategory/JobCategory';
 
 const Root = () => {
     return (
         <div>
-          <h1>Root is gut gut......</h1>  
+           <PeopleShow></PeopleShow> 
+           <JobCategory></JobCategory>
         </div>
     );
 };

@@ -1,0 +1,44 @@
+.every-job-item{
+    /* margin:auto ;
+    display: block; */
+    margin-left: 150px;
+    margin-right: 0px;
+    width:400px;
+    height: 300px;
+    background: linear-gradient(90deg, rgba(126, 144, 254, 0.05) 0%, rgba(152, 115, 255, 0.05) 100%);
+}
+.every-job-item img{
+    max-width: 120px;
+    max-height: 40px;
+}
+.remote-full{
+    border:  1px solid #7E90FE;
+    border-radius: 4px;
+    width: 91px;
+    height: 40px;
+    font-size: 16px;
+    color: #7E90FE;
+    margin-right: 15px;
+    padding: 5px 6px;
+}
+.loc-sal{
+    margin-right: 15px;
+    font-size: 18px;
+}
+.loc-sal img{
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+.btn-view{
+    width: 130px;
+    height: 50px;
+    padding: 1px 7px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    color: whitesmoke;
+    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+    border: none;
+    border-radius: 5px;
+}

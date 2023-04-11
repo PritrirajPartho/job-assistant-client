@@ -9,7 +9,7 @@
 }
 .header-item h1{
     margin-left: 100px;
-    margin-right: 100px;
+    margin-right: 80px;
     color: #9873FF;
     font-weight: bolder;
 }
@@ -21,7 +21,7 @@
 }
 .header-item nav p a{
     margin-bottom: 0;
-    margin-left: 50px;
+    margin-left: 40px;
     text-decoration: none;
     font-size: larger;
     font-weight: bolder;    

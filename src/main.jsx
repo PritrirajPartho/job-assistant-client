@@ -8,6 +8,7 @@ import {
 import ErrorPage from './components/ErrorPage/ErrorPage';
 import Home from './components/Home/Home';
 import Root from './components/Root/Root';
+import JobDetails from './components/JobDetails/JobDetails';
 
 
 // Routing is start herer..........
@@ -21,6 +22,11 @@ const router = createBrowserRouter([
         path: "/",
         element: <Root></Root>,
       },
+      {
+        path: "job/:jobId",
+        element: <JobDetails></JobDetails>,
+        loader: ({params}) => fetch('../public/data.json')
+      }
     ],
   },
 ]);

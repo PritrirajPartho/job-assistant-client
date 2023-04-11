@@ -1,12 +1,21 @@
 .people-container{
     display: flex;
     justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 150px;
+}
+.people-left h1{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 65px;
+}
+.people-left h1 span{
+    color:  #9873FF;
 }
 .people-item-img-con{
     background-image: url('../../../public/img/importent/Vector-1.png');
     background-repeat: none;
-    /* width: 416px;
-    height: 544px; */
 }
 .people-item-img-con img{
     width: 416px;

@@ -5,8 +5,8 @@ import peopleImg from '../../../public/img/importent/people.png';
 const PeopleShow = () => {
     return (
         <div className='people-container'>
-             <div>
-                <h1>One Step Closer To Your Dream Job</h1>
+             <div className='people-left'>
+                <h1>One Step <br/> Closer To Your <br/><span>Dream Job</span></h1>
                 <p>
                 We all need work because we all need money to <br/> 
                 secure our future. We have to earn for our  <br />

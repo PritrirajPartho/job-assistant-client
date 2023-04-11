@@ -2,6 +2,7 @@ import React from 'react';
 import './JobShow.css';
 import imgLocation from '../../../public/img/Icons/location .png';
 import imgDollar from '../../../public/img/Icons/dollar.png';
+import { Link } from 'react-router-dom';
 
 const JobShow = ({job}) => {
     const{id, name, img, company, salary, location, remote, type} = job;
@@ -18,7 +19,7 @@ const JobShow = ({job}) => {
                 <span className='loc-sal'><img src={imgLocation} alt="" />{location}</span>
                 <span className='loc-sal'><img src={imgDollar} alt="" />{salary}</span>
             </p>
-            <button className='btn-view'>View-Details</button>
+            <button className='btn-view'><Link to={`/job/${id}`}>View-Details</Link></button>
         </div>
     );
 };

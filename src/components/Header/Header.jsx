@@ -9,6 +9,7 @@ const Header = () => {
                 <div className='header-item'>
                     <h1>Job-Assistant</h1>
                     <nav>
+                        <p><Link to={'/'}>Home</Link></p>
                         <p><Link>Statistics</Link></p>
                         <p><Link>Applied Jobs</Link></p>
                         <p><Link>Blog</Link></p>

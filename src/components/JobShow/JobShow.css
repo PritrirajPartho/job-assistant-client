@@ -51,3 +51,63 @@
     border: none;
     border-radius: 5px;
 }
+
+
+/* This is Responvie componnet style */
+@media only screen and (max-width: 600px) {
+    .every-job-item{
+        position: relative;
+        padding:45px;
+        width: 280px;
+        height: 260px;
+        margin-right: 50px;
+        border-radius: 10px;
+        background: linear-gradient(90deg, rgba(126, 144, 254, 0.05) 0%, rgba(152, 115, 255, 0.05) 100%);
+    }
+    .every-job-item img{
+        max-width: 120px;
+        max-height: 25px;
+    }
+    .remote-full{
+        border:  1px solid #7E90FE;
+        border-radius: 4px;
+        width: 91px;
+        height: 40px;
+        font-size: 16px;
+        color: #7E90FE;
+        margin-right: 15px;
+        margin-bottom: 20px;
+        padding: 5px 6px;
+    }
+    .loc-sal{
+        margin-right: 15px;
+        margin-top: 10px;
+        font-size: 10px;
+    }
+    .loc-sal img{
+        margin-top: 5px;
+        margin-bottom: -5px;
+        margin-right: 10px;
+    }
+    .btn-view a{
+        text-decoration: none;
+        color: whitesmoke;
+    }
+    .btn-view{
+        position: absolute;
+        bottom: 30px;
+        text-decoration: none;
+        width: 130px;
+        height: 50px;
+        margin-top: 20px;
+        padding: 1px 7px;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 20px;
+        color: whitesmoke;
+        background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+        border: none;
+        border-radius: 5px;
+    }
+  }

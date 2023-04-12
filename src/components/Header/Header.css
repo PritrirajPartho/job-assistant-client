@@ -37,3 +37,51 @@
     border: none;
     border-radius: 10px;
 }
+
+/* This is Responvie componnet style */
+@media only screen and (max-width: 600px) {
+    .header-container{
+        font-size: small;
+        margin-left: 0;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .header-item{
+        display: flex;
+    }
+    .header-item h1{
+        font-size: small;
+        margin-left: 5px;
+        margin-right: 8px;
+        color: #9873FF;
+        font-weight: bolder;
+    }
+    .header-item nav{
+        display: flex;
+        justify-content: space-evenly;
+        font-size: small;
+        margin-top: -5px;
+        margin-bottom: -15px;
+        margin-left: 5px;
+    }
+    .header-item nav p a{
+        margin-bottom: -5px;
+        margin-left: 10px;
+        text-decoration: none;
+        font-size: 10px;
+        font-weight: 400;    
+    }
+    /*btn style header-container btn */
+    .header-container button{
+        color: whitesmoke;
+        background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+        font-size: 4px;
+        width: 70px;
+        height: 25px;
+        margin-right: 10px;
+        border: none;
+        border-radius: 10px;
+    }
+  }

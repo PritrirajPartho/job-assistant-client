@@ -34,3 +34,46 @@
     max-height: 35px;
     border-radius: 3px;
 }
+
+/* This is Responvie componnet style */
+@media only screen and (max-width: 600px) {
+    .root-section h1{
+        text-align: center;
+        font-weight: bolder;
+        font-size: 15px;
+    }
+    .root-section p{
+        text-align: center;
+        font-size: smaller;
+    }
+    
+    .category-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-size: smaller;
+    }
+    .above-part-img-heading{
+        margin-top: 5px;
+        margin-left: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .category-item{
+        height: 100px;
+        width:  100px;
+        font-size: smaller;
+        margin-top: 30px;
+        background: linear-gradient(90deg, rgba(126, 144, 254, 0.05) 0%, rgba(152, 115, 255, 0.05) 100%);
+        border-radius: 10px;
+    }
+    .above-part-img-heading img{
+        padding: 1px;
+        background-color: rgb(231, 194, 241);
+        max-width: 10px;
+        max-height: 15px;
+        border-radius: 3px;
+    }
+    
+  }

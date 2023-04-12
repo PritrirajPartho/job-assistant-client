@@ -35,3 +35,41 @@
     width: 600px;
     height: 520px;
 }
+
+/* This is Responvie componnet style */
+@media only screen and (max-width: 600px) {
+    .people-container{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 30px;
+        margin-right: 15px;
+        margin-bottom: 30px;
+    }
+    .people-left h1{
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+    }
+    .people-left h1 span{
+        color:  #9873FF;
+    }
+    .people-left p{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 10px;
+    }
+    .people-left button{
+        color: whitesmoke;
+        background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+        font-size: 10px;
+        width: 90px;
+        height: 35px;
+        border: none;
+        border-radius: 10px;
+    }
+    .people-item-img-con img{
+        margin-top: 50px;
+        width: 200px;
+        height: 130px;
+    }
+  }

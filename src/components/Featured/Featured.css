@@ -29,3 +29,35 @@
     border: none;
     border-radius: 10px;
 }
+
+
+/* This is Responvie componnet style */
+@media only screen and (max-width: 600px) {
+  .Above-header h1{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 32px;
+    font-weight: 400;
+  }
+  .Above-header p{
+    margin-bottom: 100px;  
+    text-align: center;
+  }
+  .jobs-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .see-all-btn{
+      color: whitesmoke;
+      background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+      font-size: 24px;
+      width: 190px;
+      height: 65px;
+      margin: auto;
+      display: block;
+      border: none;
+      border-radius: 10px;
+  }
+  
+}

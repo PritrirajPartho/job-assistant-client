@@ -70,7 +70,7 @@ const handleAddToJob = (job) => {
 
     return (
         <section className='job-details-section'>
-             <h1>Job Details</h1>
+             <h1>Job---Details</h1>
              <div className='details-container'>
                  <div className='details-left-part'>
                     <p><span className='bolder'>Job Description:   </span>{job.description}</p>
@@ -83,13 +83,13 @@ const handleAddToJob = (job) => {
                  <div >
                        <div className='details-right-part'>
                             <h2>Job Details</h2>
-                            <p><img src={dollar} />{job.salary}</p>
-                            <p><img src={jobimg} />{job.name}</p>
+                            <p><img className='icon'  src={dollar} />{job.salary}/ year</p>
+                            <p><img className='icon'  src={jobimg} />{job.name}</p>
                             <p className='bolder'>Contact Information</p>
                             <div>
-                            <p><img src={call} />{job.phone}</p>
-                            <p><img src={mail} />{job.email}</p>
-                            <p><img src={location} />{job.location}</p>
+                            <p><img className='icon'   src={call} />{job.phone}</p>
+                            <p><img className='icon'   src={mail} />{job.email}</p>
+                            <p><img className='icon'   src={location} />{job.location}</p>
                             </div>
                        </div>
                     <button  onClick={() => handleAddToJob(job)}  className='apply-btn'>Apply Now</button>

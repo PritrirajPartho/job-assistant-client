@@ -10,7 +10,8 @@ const AppliedJobs = () => {
       setData(storedData);
     },[])
     useEffect(() => {
-          const filtering = data.filter(item => console.log(item))
+          const filtering = data.filter(item => item.remote === true)
+          setFilter
     },[data])
     return (
         <div className='applied-container'>

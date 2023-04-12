@@ -4,7 +4,7 @@ import './JobCategory.css';
 const JobCategory = () => {
     const[data, setdata] = useState([])
     useEffect(() =>{
-        fetch('../../../public/category.json')
+        fetch('category.json')
         .then(res => res.json())
         .then(data => setdata(data))
     },[])

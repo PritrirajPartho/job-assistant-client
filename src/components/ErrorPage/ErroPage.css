@@ -1,0 +1,12 @@
+.error p{
+  text-align: center;
+  font-size: 100px;
+  margin-top: 100px;
+  color: red;
+}
+.error span{
+    margin-left: 250px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+}

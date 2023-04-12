@@ -1,3 +1,18 @@
+.btn-filter-div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.btn-filter-div button{
+    color: whitesmoke;
+    background-color: blueviolet;
+    font-size: 20px;
+    width: 190px;
+    height: 45px;
+    margin-right: 30px;
+    border: none;
+    border-radius: 10px;
+}
 .applied-container{
     display: flex;
     flex-direction: column;

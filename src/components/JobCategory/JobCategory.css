@@ -1,0 +1,29 @@
+.root-section h1{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 32px;
+}
+.root-section p{
+    text-align: center;
+}
+
+
+.category-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.category-item{
+    width: 210px;
+    height: 190px;
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-right: 0px;
+    background: linear-gradient(90deg, rgba(126, 144, 254, 0.05) 0%, rgba(152, 115, 255, 0.05) 100%);
+    border: 1px solid salmon; 
+    border-radius: 10px;
+}
+.category-item img{
+    max-width: 30px;
+    max-height: 350px;
+}

@@ -11,7 +11,7 @@ import Root from './components/Root/Root';
 import JobDetails from './components/JobDetails/JobDetails';
 
 
-// Routing is start herer..........
+// Routing is start herer.............
 const router = createBrowserRouter([
   {
     path: "/",
@@ -23,9 +23,9 @@ const router = createBrowserRouter([
         element: <Root></Root>,
       },
       {
-        path: "job/:jobId",
+        path: "/job/:jobId",
         element: <JobDetails></JobDetails>,
-        loader: ({params}) => fetch('../public/data.json')
+        loader: ({params}) => fetch('/data.json')
       }
     ],
   },
@@ -33,6 +33,6 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-       <RouterProvider router={router}></RouterProvider>
+        <RouterProvider router={router}></RouterProvider>
   </React.StrictMode>,
 )

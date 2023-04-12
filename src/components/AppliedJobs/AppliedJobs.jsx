@@ -4,23 +4,31 @@ import ReviewJobs from '../ReviewJobs/ReviewJobs';
 
 const AppliedJobs = () => {
     const[data, setData] = useState([]);
-    const[filter, setFilter] = useState(false);
+    const[filter, setFilter] = useState([]);
     useEffect(() => {
       const storedData = JSON.parse(localStorage.getItem("jobId"));
       setData(storedData);
+      setFilter(storedData);
     },[])
-    useEffect(() => {
-          const filtering = data.filter(item => item.remote === true)
-          setFilter
-    },[data])
+
+    const handleFilter  = (fil) =>{
+        if(fil === 'nofilter'){
+            setFilter(data);
+        }
+        else{
+            const filtered = data?.filter(job => job.remote === fil)
+            setFilter(filtered)
+        }
+    }
     return (
         <div className='applied-container'>
             <div className='btn-filter-div'>
-                <button>Remote-jobs</button>
-                <button>Onsite-jobs</button>
+                <button onClick={() => handleFilter(true)}>Remote-jobs</button>
+                <button onClick={() => handleFilter(false)}>Onsite-jobs</button>
+                <button onClick={() => handleFilter('nofilter')}>No Filter</button>
             </div>
             {
-                data.map(job => <ReviewJobs 
+                filter?.map(job => <ReviewJobs 
                    key={job.id}
                    job ={job}
                 ></ReviewJobs>)

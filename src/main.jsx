@@ -12,6 +12,7 @@ import JobDetails from './components/JobDetails/JobDetails';
 import AppliedJobs from './components/AppliedJobs/AppliedJobs';
 import CartJobsLoader from './components/utilities/CartJobsLoader';
 import Statistics from './components/Statistics/Statistics';
+import Blog from './components/Blog/Blog';
 
 
 // Routing is start herer.............
@@ -35,9 +36,12 @@ const router = createBrowserRouter([
         element: <Statistics></Statistics>
       },
       {
-        path: "/applied-jobs",
+        path: "/blog",
+        element: <Blog></Blog>
+      },
+      {
+        path: "/applied",
         element: <AppliedJobs></AppliedJobs>,
-        loader: CartJobsLoader
       }
     ],
   },

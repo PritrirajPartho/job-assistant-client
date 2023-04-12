@@ -1,12 +1,22 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import './AppliedJobs.css';
+import ReviewJobs from '../ReviewJobs/ReviewJobs';
 
 const AppliedJobs = () => {
-    const savedCart = useLoaderData();
-    console.log(savedCart);
-    // const[cart, setCart]  = useState(savedCart);
+    const[data, setData] = useState([]);
+    useEffect(() => {
+      const storedData = JSON.parse(localStorage.getItem("jobId"));
+      setData(storedData);
+    },[])
+    console.log(data);
     return (
-        <div>
-            <h1>Applied--Jobs</h1>
+        <div className='applied-container'>
+            {
+                data.map(job => <ReviewJobs 
+                   key={job.id}
+                   job ={job}
+                ></ReviewJobs>)
+            }
         </div>
     );
 };

@@ -6,12 +6,8 @@ import dollar from '../../../public/img/Icons/dollar.png';
 import call from '../../../public/img/Icons/call.png';
 import mail from '../../../public/img/Icons/msg.png';
 import  jobimg from '../../../public/img/Icons/business 1.png';
-import { addToDb, getShoppingCart } from '../utilities/Storage';
 
 const JobDetails = () =>{
-
-    const [jobs, setJobs] = useState([]);
-    const [cart, setCart] = useState([])
     const[job, setJob] = useState([]);
     const{jobId} = useParams();
  // useeffect work start below.................. 
@@ -23,50 +19,27 @@ const JobDetails = () =>{
            setJob(result);
         })
     },[])
-    useEffect(() => {
-        fetch('/data.json')
-            .then(res => res.json())
-            .then(data => setJobs(data))
-    }, []);
-
-//local storage work start here.......
-useEffect( () =>{
-    const storedCart = getShoppingCart();
-    const savedCart = [];
-    // step 1: get id of the addedjob
-    for(const id in storedCart){
-        // step 2: get job from jobs state by using id
-        const addedJob = jobs.find(jb=> jb.id === id)
-        if(addedJob){
-            // step 3: add quantity
-            const quantity = storedCart[id];
-            addedJob.quantity = quantity;
-            // step 4: add the added job to the saved cart
-            savedCart.push(addedJob);
-        }
-    }
-    // step 5: set the cart
-    setCart(savedCart);
-}, [jobs])
-
-// handleAddToJob
-const handleAddToJob = (job) => {
-    let newCart = [];
-    // if exist update quantity by 1
-    const exists = cart.find(pd => pd.id === job.id);
-    if(!exists){
-        job.quantity = 1;
-        newCart= [...cart, job]
-    }
-    else{
-        exists.quantity = exists.quantity + 1;
-        const remaining = cart.filter(pd => pd.id !== job.id);
-        newCart = [...remaining, exists];
-    }
-// set to the return....
-    setCart(newCart);
-    addToDb(job.id)
-}
+// locat-storage related issue....
+const handleAddToJob = job =>{
+   const{name, id, email} = job;
+   let foundJob = [];
+   const previousJob = JSON.parse(localStorage.getItem("jobId"));
+   if(previousJob){
+     const isThisjobFound = previousJob.find(j=> j.id === id)
+     console.log(isThisjobFound);
+       if(isThisjobFound){
+         alert('Already job  added')
+       }
+       else{
+         foundJob.push(...previousJob, job);
+         localStorage.setItem("jobId", JSON.stringify(foundJob));
+       }
+   }
+   else{
+    foundJob.push(job)
+    localStorage.setItem("jobId", JSON.stringify(foundJob));
+   }
+} 
 
     return (
         <section className='job-details-section'>

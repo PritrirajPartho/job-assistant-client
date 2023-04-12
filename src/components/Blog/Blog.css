@@ -1,0 +1,10 @@
+.blog-container {
+    margin-left: 98px;
+}
+.blog-container h1{
+   color: green;
+}
+.blog-container h3{
+    font-weight: 500;
+    font-size: larger;
+}

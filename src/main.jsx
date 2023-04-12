@@ -9,6 +9,8 @@ import ErrorPage from './components/ErrorPage/ErrorPage';
 import Home from './components/Home/Home';
 import Root from './components/Root/Root';
 import JobDetails from './components/JobDetails/JobDetails';
+import AppliedJobs from './components/AppliedJobs/AppliedJobs';
+import CartJobsLoader from './components/utilities/CartJobsLoader';
 
 
 // Routing is start herer.............
@@ -26,6 +28,11 @@ const router = createBrowserRouter([
         path: "/job/:jobId",
         element: <JobDetails></JobDetails>,
         loader: ({params}) => fetch('/data.json')
+      },
+      {
+        path: "/applied-jobs",
+        element: <AppliedJobs></AppliedJobs>,
+        loader: CartJobsLoader
       }
     ],
   },

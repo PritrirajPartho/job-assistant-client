@@ -15,9 +15,11 @@ const JobCategory = () => {
             <div className='category-container'>
                 {
                     data.map(d => <div className='category-item' key={d.id}> 
-                        <img src={d.img} alt="" />
-                        <h4>{d.name}</h4>
-                        <p>{d.jobs_available}--jobs available</p>
+                        <div className='above-part-img-heading'>
+                            <img src={d.img} alt="" />
+                            <h4>{d.name}</h4>
+                        </div>
+                        <p>{d.jobs_available}-jobs-available</p>
                     </div>)
                 }
            </div>
